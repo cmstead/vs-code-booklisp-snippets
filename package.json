@@ -2,7 +2,7 @@
     "name": "booklisp-snippets",
     "displayName": "Booklisp Document Snippets",
     "description": "Snippets for quick booklisp file generation",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "cmstead",
     "engines": {
         "vscode": "^1.12.0"
