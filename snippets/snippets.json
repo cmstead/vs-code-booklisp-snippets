@@ -1,0 +1,121 @@
+{
+    "New Booklisp Page Document": {
+        "prefix": "bl-page-document",
+        "body": [
+            "<!--bl",
+            "    (filemeta",
+            "        (title \"${1:title-value}\")",
+            "    )",
+            "/bl-->$0"
+        ],
+        "description": ""
+    },
+    "New Booklisp Table Of Contents Document": {
+        "prefix": "bl-toc-document",
+        "body": [
+            "<!--bl",
+            "    (filemeta",
+            "        (title \"${1:title-value}\")",
+            "        (authors [\"${2:author-values}\"])",
+            "    )",
+            "/bl-->",
+            "",
+            "<!--bl",
+            "    (table-of-contents",
+            "        (${3|chapter,section-main|} \"${4:file-path}\")",
+            "    )",
+            "/bl-->"
+        ],
+        "description": ""
+    },
+    "Booklisp Executable Block": {
+        "prefix": "bl-block",
+        "body": [
+            "<!--bl",
+            "$0",
+            "/bl-->"
+        ],
+        "description": "New executable booklisp block"
+    },
+    "Booklisp File-Meta": {
+        "prefix": "bl-filemeta",
+        "body": [
+            "(filemeta",
+            "    $0",
+            ")"
+        ],
+        "description": "File metadata -- new filemeta call"
+    },
+    "Booklisp File-Meta Title": {
+        "prefix": "bl-filemeta-title",
+        "body": [
+            "(title \"${1:title-value}\")$0"
+        ],
+        "description": "File metadata -- title call"
+    },
+    "Booklisp File-Meta Subtitle": {
+        "prefix": "bl-filemeta-subtitle",
+        "body": [
+            "(subtitle \"${1:subtitle-value}\")$0"
+        ],
+        "description": "File metadata -- subtitle call"
+    },
+    "Booklisp File-Meta Authors": {
+        "prefix": "bl-filemeta-subtitle",
+        "body": [
+            "(authors [\"${1:author-names}\"])$0"
+        ],
+        "description": "File metadata -- authors call"
+    },
+    "Booklisp Table of Contents": {
+        "prefix": "bl-table-of-contents",
+        "body": [
+            "(table-of-contents",
+            "    $0",
+            ")"
+        ],
+        "description": "Table of Contents"
+    },
+    "Booklisp Table of Contents -- Chapter": {
+        "prefix": "bl-table-of-contents-chapter",
+        "body": [
+            "(chapter \"${1:file-path}\")$0"
+        ],
+        "description": "Table of Contents -- Chapter"
+    },
+    "Booklisp Table of Contents -- Section-Main": {
+        "prefix": "bl-table-of-contents-section-main",
+        "body": [
+            "(section-main \"${1:file-path}\")$0"
+        ],
+        "description": "Table of Contents -- Section-Main"
+    },
+    "Booklisp Section": {
+        "prefix": "bl-section",
+        "body": [
+            "(section \"${1:file-path}\")$0"
+        ],
+        "description": "Document Section"
+    },
+    "Booklisp Subsection": {
+        "prefix": "bl-subsection",
+        "body": [
+            "(subsection \"${1:file-path}\")$0"
+        ],
+        "description": "Document Subsection"
+    },
+    "Booklisp Define Variable": {
+        "prefix": "bl-define",
+        "body": [
+            "(define! \"${1:variable-name}\" ${2:variable-value})$0"
+        ],
+        "description": "Define a variable"
+    },
+    "Booklisp List": {
+        "prefix": "bl-list",
+        "body": [
+            "[${1:values-here}]$0"
+        ],
+        "description": "Create a list"
+    }
+}

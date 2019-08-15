@@ -1,0 +1,21 @@
+{
+    "name": "booklisp-snippets",
+    "displayName": "Booklisp Document Snippets",
+    "description": "Snippets for quick booklisp file generation",
+    "version": "0.0.1",
+    "publisher": "cmstead",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "markdown",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
